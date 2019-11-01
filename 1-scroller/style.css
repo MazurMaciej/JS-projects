@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow: hidden;
+}
+
+div {
+    height: 100vh;
+    text-align: center;
+}
+
+div img {
+    padding: 20vh 0;
+}
