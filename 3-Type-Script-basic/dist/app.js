@@ -16,7 +16,13 @@ class Department {
         console.log(this.employees);
     }
 }
-const accounting = new Department('d1', 'Accounting');
+class ITDepartment extends Department {
+    constructor(id, admins) {
+        super(id, 'IT');
+        this.admins = admins;
+    }
+}
+const accounting = new ITDepartment('d1', ['Accounting']);
 accounting.addEmployee('Maciej');
 accounting.addEmployee('Olimpia');
 accounting.printEmployeeInormation();
